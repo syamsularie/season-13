@@ -17,4 +17,4 @@ console.log(`Merupakan seorang ${age1.generation()}`)
 var PersonValidity = require('./domain/personValidity/personValidity.logic');
 var nik1 = new PersonValidity('Syamsul','7306020502010001','2001-02-05')
 console.log(`Jumlah Digit NIK ${nik1.name} ${nik1.nik} ${nik1.nikValidity()}`);
-console.log(`Tgl Lahir ${nik1.bod} dan NIK ${nik1.nik} ${nik1.name} ${nik1.bodValidity()}`);
+console.log(`Tgl Lahir ${nik1.bod} pada NIK ${nik1.nik} ${nik1.name} ${nik1.bodValidity()}`);
