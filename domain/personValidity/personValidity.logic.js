@@ -18,11 +18,15 @@ class PersonValidityLogic extends PersonLogic{
     var result = date.concat(month,year)
     var nikdate = this.nik.substring(6,12)
     //console.log(result)
-    if (result === nikdate){
-      return "Valid"
+    if (this.nik.length != 16){
+      return "NIK Tidak Valid tidak dapat dibandingkan"
     }else{
-      return "Tidak Valid"
-    }
+      if (result === nikdate){
+        return "Valid"
+      }else{
+        return "Tidak Valid"
+      }
+    }  
   }
 }
 module.exports = PersonValidityLogic;
